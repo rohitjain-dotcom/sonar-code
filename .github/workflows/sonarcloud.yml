@@ -33,8 +33,6 @@ jobs:
 
       - name: Set up SonarCloud
         uses: sonarsource/sonarcloud-github-action@v1  # Set up SonarCloud GitHub Action
-        with:
-          # No need to provide sonar-token here, it's handled by env variable
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
