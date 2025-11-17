@@ -34,6 +34,5 @@ jobs:
         uses: sonarsource/sonarcloud-github-action@v1
         with:
           sonar-token: ${{ secrets.SONAR_TOKEN }}
-          distribution: 'github'
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
